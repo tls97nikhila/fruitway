@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="validation/valid_s.js"></script>
+	
+		
+</head>
+<body>
+	 <div class="container-fluid"><center><h1 style="font-size: 40px;font-style: bold">Online Fruit Portal</h1></center>
+  </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fruit Vendoring Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="php/home.php">Home</a></li>
+      <li><a href="#">buy</a></li>
+      <li><a href="#">sell</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+  <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Register here
+       <span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="regform_seller.html">Seller</a></li>
+          <li><a href="regform_buyer.html">Buyer</a></li>
+          
+        </ul>
+      </li>
+
+
+
+      
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+       <span class="glyphicon glyphicon-log-in"></span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="login_seller.html">Seller</a></li>
+          <li><a href="login_buyer.html">Buyer</a></li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<div class="container"><center><h1>Retailer Registration</h1></center>
+
+		<div class="row">
+			<div class="col-sm-3">				
+			</div>
+			<div class="col-sm-6">
+				<form  id="myform1" action="php/insert_seller.php" method="post">
+					<div class="form-group">
+						<label for="firstname">FirstName</label>
+						<input type="text" name="firstname" id="firstname" class="form-control" onkeyup="validation('firstname')">
+						<p id="error_firstname">required</p>
+					</div>
+					<div class="form-group">
+						<label for="lastname">LastName</label>
+						<input type="text" name="lastname" id="lastname" class="form-control" onkeyup="validation('lastname')">
+						<p id="error_lastname">required</p>
+					</div>
+					<!-- <div class="form-groudiv">
+						<label for="username">Username</label>
+						<input type="text" name="username" id="username" class="form-control">
+					</div> -->
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" class="form-control" onkeyup="validation('useremail')">
+						<p id="error_email">enter valid email id</p>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" class="form-control" onkeyup="validation('password')">
+						<p id="error_password">enter valid password</p>
+					</div>
+
+					<div class="form-group">
+						<label for="confirm_password">Confirm password</label>
+						<input type="password" name="confirm_password" id="confirm_password" class="form-control" onkeyup="validation('confirm_password')" onfocus="cheking()">
+						<p id="error_confirmpassword">confirm password</p>		
+					</div>
+					
+
+					<div class='form-group'>
+						<label for="">Address</label> 
+						<textarea rows="4" cols="70"  name="address" id="address" class="form-control" onkeyup="validation('address')"></textarea>
+						<p id="error_address">Enter Valid Address</p>
+					</div>
+					<div class="form-group">
+						<label for="pan">PAN Number</label>
+						<input type="pan" name="pan" id="pan" class="form-control" onkeyup="validation('firstname')">
+						<p id="error_pan">enter valid pan number</p>
+					</div>
+					<div class="form-group">
+						<label for="shop">Registered Shop Name</label>
+						<input type="text" name="shop" id="shop" class="form-control" onkeyup="validation('firstname')">
+						<p id="error_pan">enter valid details</p>
+					</div>
+
+
+					<button type="submit" id="form_button" value="button" class="btn btn-default" onclick="form_send()" disabled="true">submit</button>
+				</form>
+			</div>
+			<div class="col-sm-3">				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
