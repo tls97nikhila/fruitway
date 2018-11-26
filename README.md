@@ -11,9 +11,9 @@ We need to setup our environment by installing XAMPP server.This server includes
 1.Move all the files into a folder
 2.Place that folder in c:/xampp/htdocs.
 # Ready to start
-Click the admin of Apache server,
-Select the folder where the project is present C:/xampp/htdocs/yourfolder
-navigate to php/home.php for the home page of the application.
+1.Click the admin of Apache server,
+2.Select the folder where the project is present C:/xampp/htdocs/yourfolder
+3.navigate to php/home.php for the home page of the application.
 # Design
 Styling files are included in css folder, along with all the icons and images.
 # Server side Scripting
