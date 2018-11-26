@@ -10,7 +10,7 @@ We need to setup our environment by installing XAMPP server.This server includes
 # Code
 1.Move all the files into a folder
 2.Place that folder in c:/xampp/htdocs.
-###Ready to start
+### Ready to start
 -Click the admin of Apache server,
 -.Select the folder where the project is present C:/xampp/htdocs/yourfolder
 -.navigate to php/home.php for the home page of the application.
