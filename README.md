@@ -4,12 +4,12 @@ Web application designed to purchase and sell fruits on a platform.
 This application uses PHP ,MySQL and XAMPP sever to run the project.
 We need to setup our environment by installing XAMPP server.This server includes everything what we require like PHP,Apache and MySQL.
 # Data from database
-  *1.Dump the database by starting the Admin of MySQL.    
-  *2.Create a database named 'market'     
-  *3.Now dump the import file listed above.
+  * Dump the database by starting the Admin of MySQL.    
+  * Create a database named 'market'     
+  * Now dump the import file listed above.
 # Code
- * 1.Move all the files into a folder
- *     2Place that folder in c:/xampp/htdocs.
+ * 1.Move all the files into a folder      
+ * 2 Place that folder in c:/xampp/htdocs.
 # Ready to start
   *Click the admin of Apache server,      
   *Select the folder where the project is present C:/xampp/htdocs/yourfolder     
