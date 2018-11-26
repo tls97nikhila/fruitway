@@ -8,8 +8,8 @@ We need to setup our environment by installing XAMPP server.This server includes
   * Create a database named 'market'     
   * Now dump the import file listed above.
 # Code
- * 1.Move all the files into a folder      
- * 2 Place that folder in c:/xampp/htdocs.
+ * Move all the files into a folder
+ * Place that folder in c:/xampp/htdocs.
 # Ready to start
   *Click the admin of Apache server,      
   *Select the folder where the project is present C:/xampp/htdocs/yourfolder     
