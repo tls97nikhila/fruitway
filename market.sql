@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2018 at 04:54 AM
+-- Generation Time: Nov 26, 2018 at 12:36 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.0.30
 
@@ -71,6 +71,7 @@ INSERT INTO `buyer_wallet` (`email`, `amount`) VALUES
 --
 
 CREATE TABLE `fruit_vendors` (
+  `f_id` int(11) NOT NULL,
   `s_email` varchar(49) NOT NULL,
   `fruit` varchar(49) NOT NULL,
   `quantity` int(10) NOT NULL,
@@ -81,10 +82,10 @@ CREATE TABLE `fruit_vendors` (
 -- Dumping data for table `fruit_vendors`
 --
 
-INSERT INTO `fruit_vendors` (`s_email`, `fruit`, `quantity`, `cost`) VALUES
-('dev@gmail.com', 'f3', 199, 21),
-('dev@gmail.com', 'hh', 12, 30),
-('dev@gmail.com', 'mongo', 1000, 220);
+INSERT INTO `fruit_vendors` (`f_id`, `s_email`, `fruit`, `quantity`, `cost`) VALUES
+(1, 'dev@gmail.com', 'f3', 199, 21),
+(2, 'dev@gmail.com', 'hh', 12, 30),
+(3, 'dev@gmail.com', 'mongo', 1000, 220);
 
 -- --------------------------------------------------------
 
@@ -140,7 +141,7 @@ ALTER TABLE `buyer_wallet`
 -- Indexes for table `fruit_vendors`
 --
 ALTER TABLE `fruit_vendors`
-  ADD PRIMARY KEY (`s_email`,`fruit`);
+  ADD PRIMARY KEY (`f_id`,`s_email`,`fruit`);
 
 --
 -- Indexes for table `seller`
@@ -153,6 +154,16 @@ ALTER TABLE `seller`
 --
 ALTER TABLE `seller_wallet`
   ADD PRIMARY KEY (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `fruit_vendors`
+--
+ALTER TABLE `fruit_vendors`
+  MODIFY `f_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
